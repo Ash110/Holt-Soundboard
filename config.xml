@@ -34,7 +34,7 @@
 <preference name="xwalkCommandLine" value="--disable-pull-to-refresh-effect --ignore-gpu-blacklist "/>
 <platform name="android" >
     <preference name="android-minSdkVersion" value="21"/>
-    <preference name="android-targetSdkVersion" value="23"/>
+    <preference name="android-targetSdkVersion" value="26"/>
     <preference name="android-installLocation" value="auto"/>
     <preference name="android-signed" value="true"/>
     <preference name="AndroidLaunchMode" value="singleTop"/>
