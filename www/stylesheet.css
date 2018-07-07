@@ -49,3 +49,15 @@ img{
 .expandable-thing{
     color: aliceblue;
 }
+table{
+    position: absolute;
+    top: 11%;
+}
+td{
+    background-color: white;
+    border: 20px #1a1b1c solid;
+    border-radius: 60px;
+    border-radius: 10px;
+    width: auto;
+    height: auto;
+}
