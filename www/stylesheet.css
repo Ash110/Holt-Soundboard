@@ -61,3 +61,21 @@ td{
     width: auto;
     height: auto;
 }
+.support-body{
+    position: absolute;
+    top: 12%;
+    color: white;
+    width: 90%;
+    left: 5%;
+    font-size: 150%;
+}
+.first-td{
+    background: #ffff72;
+}
+.second-td{
+    background: #ff7272;
+}
+
+.third-td{
+    background: #72c3ff;
+}
