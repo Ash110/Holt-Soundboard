@@ -1,9 +1,16 @@
 $(document).ready(function() {
+    $('.modal').modal();
     $('.sidenav').sidenav();
     $('.collapsible').collapsible();
     $(".goback2").click(function(){
         window.location.href ="index.html";
     });
+    var e = (window.localStorage.key(0), window.localStorage.getItem("Holt-update-02-10-18"));
+    if ("done" === e);
+    else {
+        window.localStorage.setItem("Holt-update-02-10-18", "done");
+        $('.modal').modal('open');
+    }
     $("td").click(function(){
         var texto = $(this).text().trim();
         if(texto==="Hot Damn!"){
