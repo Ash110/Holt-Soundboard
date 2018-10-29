@@ -1,0 +1,116 @@
+/* MAIN PAGE*/
+
+body{
+    background-color: #1a1b1c;
+}
+.main-cards{
+    position: absolute;
+    top: 10%;
+    width: 90%;
+    left: 5%;
+}
+.header{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 9%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 175%;
+}
+#menuToggle{
+    position: absolute;
+    left: 15px;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.background{
+    position: absolute;
+    height: 1000%;
+    width:100%;
+}
+.collapsible{
+    position: absolute;
+    width: 90%;
+    background-color: #1a1b1c;
+    left: 5%;
+    top: 5%;
+    border: none;
+}
+.collapsible-header{
+    background-color: #2a2b2c;
+    border: none;
+    color: #ffffff;
+}
+.expandable-thing{
+    color: aliceblue;
+}
+table{
+    position: absolute;
+}
+.col-4{
+    text-align: center;
+    margin-top:2%;
+    padding:1%;
+    margin-right:auto;
+    margin-left:auto;    
+    height: auto;
+}
+#searchBarActivate
+{
+    cursor:pointer;
+    position: absolute;
+    right:15px;
+    
+}
+.row,.container,body
+{
+    background-color:#1a1b1c;
+}
+#searchBar
+{
+    color:white;
+    padding-left:15px;
+    border:none;
+    height:100%;
+    width:100%;
+    z-index:1000;
+    top:0;
+    left:0;
+    position: absolute;
+    background-color:black;
+}
+#searchBarDeactivate
+{
+    color:#039BE5;
+    cursor: pointer;
+    z-index:1001;
+    background-color:transparent;
+    height:100%;
+    position: absolute;
+    border:none;
+    right:0;
+    width:50px;
+}
+.support-body{
+    position: absolute;
+    top: 12%;
+    color: white;
+    width: 90%;
+    left: 5%;
+    font-size: 150%;
+}
+.first-div{
+    background-color: #ffff72;
+}
+.second-div{
+    background: #ff7272;
+}
+
+.third-div{
+    background: #72c3ff;
+}
