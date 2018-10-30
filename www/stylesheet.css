@@ -20,9 +20,9 @@ body{
     text-align: center;
     font-size: 175%;
 }
-i{
+#menuToggle{
     position: absolute;
-    left: 3%;
+    left: 15px;
 }
 img{
     width: 100%;
@@ -51,15 +51,50 @@ img{
 }
 table{
     position: absolute;
-    top: 11%;
 }
-td{
-    background-color: white;
-    border: 20px #1a1b1c solid;
-    border-radius: 60px;
-    border-radius: 10px;
-    width: auto;
+.col-4{
+    text-align: center;
+    margin-top:2%;
+    padding:1%;
+    margin-right:auto;
+    margin-left:auto;    
     height: auto;
+}
+#searchBarActivate
+{
+    cursor:pointer;
+    position: absolute;
+    right:15px;
+    
+}
+.row,.container,body
+{
+    background-color:#1a1b1c;
+}
+#searchBar
+{
+    color:white;
+    padding-left:15px;
+    border:none;
+    height:100%;
+    width:100%;
+    z-index:1000;
+    top:0;
+    left:0;
+    position: absolute;
+    background-color:black;
+}
+#searchBarDeactivate
+{
+    color:#039BE5;
+    cursor: pointer;
+    z-index:1001;
+    background-color:transparent;
+    height:100%;
+    position: absolute;
+    border:none;
+    right:0;
+    width:50px;
 }
 .support-body{
     position: absolute;
@@ -69,13 +104,13 @@ td{
     left: 5%;
     font-size: 150%;
 }
-.first-td{
-    background: #ffff72;
+.first-div{
+    background-color: #ffff72;
 }
-.second-td{
+.second-div{
     background: #ff7272;
 }
 
-.third-td{
+.third-div{
     background: #72c3ff;
 }

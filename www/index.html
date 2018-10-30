@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="script.js"></script>
     <link href="stylesheet.css" type="text/css" rel="stylesheet">
+    <link href="bootstrap.min.css" type="text/css" rel="stylesheet">
     <script src="xdk/init-dev.js"></script>
 </head>
 <body>
@@ -30,129 +31,97 @@
     </div>
   </div>
     <audio id="buttons-music" src="" controls style="visibility:hidden; z-index:-3;"></audio>
-    <div class="header" style="display:table;">
+    <div id="mainHeader" class="header" style="display:table;">
         <p style="display:table-cell; vertical-align:middle;">
             <a href="#" data-target="slide-out" class="sidenav-trigger">
-                <i class="material-icons">
+                <i class="material-icons" id="menuToggle">
                     menu
                 </i>
             </a>
             Holt Soundboard
+            <span id="searchBarActivate" class="searchToggle">
+                <i class="material-icons">
+                    search
+                </i>
+            </span>
         </p>
+        
     </div>
-    <table class="centered striped">
-        <tbody>
-            <tr>
-                <td class="first-td">Hot Damn!</td>
-                <td class="second-td">Get Some</td>
-                <td class="third-td">Bone!</td>
-            </tr>
-            <tr>
-                <td class="first-td">Boooone!</td>
-                <td class="second-td">Vindication!</td>
-                <td class="third-td">Bingpot!</td>
-            </tr>
-            <tr>
-                <td class="first-td">Velvet Thunder</td>
-                <td class="second-td">Never been happier</td>
-                <td class="third-td">Marco Polo, Punk</td>
-            </tr>
-            <tr>
-                <td class="first-td">Yabba Dabba Doo</td>
-                <td class="second-td">Yas Queen</td>
-                <td class="third-td">Boost my bottom</td>
-            </tr>
-            <tr>
-                <td class = "first-td">Funniest Story Ever</td>
-                <td class="second-td">Next Level</td>
-                <td class="third-td">Logic against me</td>
-            </tr>
-            <tr>
-                <td class = "first-td">BRB Time</td>
-                <td class="second-td">Wuntch Insult 1</td>
-                <td class="third-td">Wuntch Insult 2</td>
-            </tr> 
-            <tr>
-                <td class = "first-td">Wuntch Insult 3</td>
-                <td class="second-td">Wuntch Insult 4</td>
-                <td class="third-td">Wuntch Insult 5</td>
-            </tr>
-            <tr>
-                <td class = "first-td">You're not Cheddar</td>
-                <td class="second-td">Holt's robot impression</td>
-                <td class="third-td">Dismissed</td>
-            </tr>
-            <tr>
-                <td class = "first-td">Dirtbag!</td>
-                <td class="second-td">I'd like to play</td>
-                <td class="third-td">Oopsie Doodle</td>
-            </tr>
-            <tr>
-                <td class = "first-td">Superior Officer</td>
-                <td class="second-td">Holt Forced Laughing</td>
-                <td class="third-td">Zero interest in food</td>
-            </tr>
-            <tr>
-                <td class = "first-td">I'm</td>
-                <td class="second-td">This is</td>
-                <td class="third-td">Raymond Holt</td>
-            </tr>
-            <tr>
-                <td class = "first-td">Is everything OK?</td>
-                <td class="second-td">Let's get that Punk</td>
-                <td class="third-td">Huh</td>
-            </tr>
-            <tr>
-                <td class = "first-td">Yes</td>
-                <td class="second-td">Painnn</td>
-                <td class="third-td">Everything is Garbage</td>
-            </tr>
-            <tr>
-                <td class = "first-td">Never. Love. Anything.</td>
-                <td class="second-td">Peralta, you're a genius</td>
-                <td class="third-td">Cowabunga, Mother</td>
-            </tr>
-            <tr>
-                <td class = "first-td">You call that, dancing?</td>
-                <td class="second-td">I'm diffusing a situation</td>
-                <td class="third-td">Situation diffused</td>
-            </tr>
-            <tr>
-                <td class = "first-td">Let's unleash Hell</td>
-                <td class="second-td">Now put on a smile</td>
-                <td class="third-td">Made? No,I birthed her</td>
-            </tr>
-            <tr>
-                <td class = "first-td">Derek</td>
-                <td class="second-td">Funky Cold Medina</td>
-                <td class="third-td">Oh Damn!</td>
-            </tr>
-            <tr>
-                <td class = "first-td">The Full Bullpen!</td>
-                <td class="second-td">Bold Personality</td>
-                <td class="third-td">Cwazy Cupcakes</td>
-            </tr>
-            <tr>
-                <td class = "first-td">Secret Weapon</td>
-                <td class="second-td">Hello Sexarella</td>
-                <td class="third-td">Holt tries a Marshmallow</td>
-            </tr>
-            <tr>
-                <td class = "first-td">How dare you Detective Diaz</td>
-                <td class="second-td">I gained 3 pounds</td>
-                <td class="third-td">I was Hula-Hooping</td>
-            </tr>
-            <tr>
-                <td class = "first-td">I'm a curd-mudgeon</td>
-                <td class="second-td">Stop playing this inane garbage</td>
-                <td class="third-td">This is Balthazar</td>
-            </tr>
-            <tr>
-                <td class = "first-td">Time to make Daddy proud</td>
-                <td class="second-td">What are you doing?</td>
-            </tr>
-        </tbody>
-      </table>
+    <div class="header" id="searchBarContainer" style="display:none;">
+        <input type="text" id="searchBar" name="search" placeholder="Search">
+        <button type="button" class="searchToggle" id="searchBarDeactivate">x</button>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+        
+        
+                <div class="first-div col-4">Hot Damn!</div>
+                <div class="second-div col-4">Get Some</div>
+                <div class="third-div col-4">Bone!</div>
+                <div class="first-div col-4">Boooone!</div>
+                <div class="second-div col-4">Vindication!</div>
+                <div class="third-div col-4">Bingpot!</div>
+                <div class="first-div col-4">Velvet Thunder</div>
+                <div class="second-div col-4">Never been happier</div>
+                <div class="third-div col-4">Marco Polo, Punk</div>
+                <div class="first-div col-4">Yabba Dabba Doo</div>
+                <div class="second-div col-4">Yas Queen</div>
+                <div class="third-div col-4">Boost my bottom</div>
+                <div class = "first-div col-4">Funniest Story Ever</div>
+                <div class="second-div col-4">Next Level</div>
+                <div class="third-div col-4">Logic against me</div>
+                <div class = "first-div col-4">BRB Time</div>
+                <div class="second-div col-4">Wuntch Insult 1</div>
+                <div class="third-div col-4">Wuntch Insult 2</div>
+                <div class = "first-div col-4">Wuntch Insult 3</div>
+                <div class="second-div col-4">Wuntch Insult 4</div>
+                <div class="third-div col-4">Wuntch Insult 5</div>
+                <div class = "first-div col-4">You're not Cheddar</div>
+                <div class="second-div col-4">Holt's robot impression</div>
+                <div class="third-div col-4">Dixsissed</div>
+                <div class = "first-div col-4">Dirtbag!</div>
+                <div class="second-div col-4">I'd like to play</div>
+                <div class="third-div col-4">Oopsie Doodle</div>
+                <div class = "first-div col-4">Superior Officer</div>
+                <div class="second-div col-4">Holt Forced Laughing</div>
+                <div class="third-div col-4">Zero interest in food</div>
+                <div class = "first-div col-4">I'm</div>
+                <div class="second-div col-4">This is</div>
+                <div class="third-div col-4">Raymond Holt</div>
+                <div class = "first-div col-4">Is everything OK?</div>
+                <div class="second-div col-4">Let's get that Punk</div>
+                <div class="third-div col-4">Huh</div>
+                <div class = "first-div col-4">Yes</div>
+                <div class="second-div col-4">Painnn</div>
+                <div class="third-div col-4">Everything is Garbage</div>
+                <div class = "first-div col-4">Never. Love. Anything.</div>
+                <div class="second-div col-4">Peralta, you're a genius</div>
+                <div class="third-div col-4">Cowabunga, Mother</div>
+                <div class = "first-div col-4">You call that, dancing?</div>
+                <div class="second-div col-4">I'm diffusing a situation</div>
+                <div class="third-div col-4">Situation diffused</div>
+                <div class = "first-div col-4">Let's unleash Hell</div>
+                <div class="second-div col-4">Now put on a xsile</div>
+                <div class="third-div col-4">Made? No,I birthed her</div>
+                <div class = "first-div col-4">Derek</div>
+                <div class="second-div col-4">Funky Cold Medina</div>
+                <div class="third-div col-4">Oh Damn!</div>
+                <div class = "first-div col-4">The Full Bullpen!</div>
+                <div class="second-div col-4">Bold Personality</div>
+                <div class="third-div col-4">Cwazy Cupcakes</div>
+                <div class = "first-div col-4">Secret Weapon</div>
+                <div class="second-div col-4">Hello Sexarella</div>
+                <div class="third-div col-4">Holt tries a Marshmallow</div>
+                <div class = "first-div col-4">How dare you Detective Diaz</div>
+                <div class="second-div col-4">I gained 3 pounds</div>
+                <div class="third-div col-4">I was Hula-Hooping</div>
+                <div class = "first-div col-4">I'm a curd-mudgeon</div>
+                <div class="second-div col-4">Stop playing this inane garbage</div>
+                <div class="third-div col-4">This is Balthazar</div>
+                <div class = "first-div col-4">Time to make Daddy proud</div>
+                <div class="second-div col-4">What are you doing?</div>
+        </div>
+    </div>
     <ul id="slide-out" class="sidenav grey darken-3" style="color:white;">
         <li><img src="https://d1ic4altzx8ueg.cloudfront.net/finder-au/wp-uploads/2017/11/Brooklyn-Nine-Nine.jpg"></li>
         <li><a href="index2.html" style="color:white;"><i class="material-icons" style="color:white;">chrome_reader_mode</i>&nbsp;&nbsp;List View</a></li>
