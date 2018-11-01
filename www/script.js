@@ -6,7 +6,10 @@ function makeEverythingAppear(boxes)
 $(document).ready(function() {
 	var search=0;
 	var mywindow = $(window);
-	var mypos = mywindow.scrollTop();
+    var mypos = mywindow.scrollTop();
+    var boxes=document.getElementsByClassName("col-4");
+    var titles=[];
+    var currentAudio=0;
 	mywindow.scroll(function() {
     	if(mywindow.scrollTop() > mypos)
     	{
@@ -30,15 +33,16 @@ $(document).ready(function() {
 			$(".search-bar").css("bottom","0%");
 			search = 1;
             $(".search-icon").text("close");
-		}else{
+            $("#last_name").focus();
+        }
+        else{
+            document.getElementById("last_name").value='';
             $(".search-bar").css("bottom","-50%");
 			search = 0;
             $(".search-icon").text("search");
+            makeEverythingAppear(boxes);
         }
 	});
-    var boxes=document.getElementsByClassName("col-4");
-    var titles=[];
-    var currentAudio=0;
     for(var i=0;i<boxes.length;i++)
     {
         titles.push(boxes[i].innerHTML.toLowerCase());
@@ -68,27 +72,14 @@ $(document).ready(function() {
             currentAudio.setAttribute('autoplay', 'autoplay');
             currentAudio.play();
     });
-    $(".searchToggle").click(function(){
-        searchBar=document.getElementById("searchBarContainer").style.display;
-        if(searchBar=="table")
-        {
-            document.getElementById("searchBarContainer").style.display="none";
-            document.getElementById("mainHeader").style.display="table";
-            makeEverythingAppear(boxes);
-        }
-        else
-        {
-            document.getElementById("searchBarContainer").style.display="table";
-            document.getElementById("mainHeader").style.display="none";
-        }
-    });
+   
     $("#last_name").on('input', function(){
         var searchBar=document.getElementById("last_name");
         makeEverythingAppear(boxes);
         searchBar=String(searchBar.value);
         for(var i=0;i<titles.length;i++)
         {
-            if(!(titles[i].includes(searchBar,0)))
+            if(!(titles[i].includes(searchBar.toLowerCase(),0)))
                 boxes[i].style.display="none";
         }
     });
