@@ -18,19 +18,24 @@
 </head>
     
 <body>
-    <div class="fixed-action-btn goback2">
-        <a class="btn-floating btn-large grey sidenav-trigger" data-target='slide-out'>
-            <i class="large material-icons">arrow_back</i>
-        </a>
+    <div class="header" style="display:table;">
+        <div style="display:table-cell; vertical-align:middle;">
+            FAQ
+            <a href="#" data-target="slide-out" class="sidenav-trigger">
+                <i class="material-icons" id="menuToggle">
+                    menu
+                </i>
+            </a>
+        </div>
     </div>
     <ul class="collapsible">
         <li>
             <div class="collapsible-header">&nbsp;How much of my data are you storing?</div>
-            <div class="collapsible-body"><span class="expandable-thing">None at all. This might come as a bit of a shocker, but we really don't want your data.</span></div>
+            <div class="collapsible-body"><span class="expandable-thing">None at all. This might come as a bit of a shocker, but I really don't want your data.</span></div>
         </li>
         <li>
             <div class="collapsible-header"> &nbsp;Why are you not collecting any data?</div>
-            <div class="collapsible-body"><span class="expandable-thing">There are multiple reasons to not be collecting your data<br>1. We don't really care much for your personal information. <br> 2. Collecting data requires setting up a secret server and sending data, which we have no idea how to do.</span></div>
+            <div class="collapsible-body"><span class="expandable-thing">There are multiple reasons to not be collecting your data<br>1. I don't really care much for your personal information. <br> 2. Collecting data requires setting up a secret server and sending data, which I have <i>no idea</i> how to do.</span></div>
         </li>
         <li>
             <div class="collapsible-header">&nbsp;Is the app GDPR compliant?</div>
@@ -40,6 +45,66 @@
             <div class="collapsible-header">&nbsp;Is the app totally ad and tracking free?</div>
             <div class="collapsible-body"><span class="expandable-thing">Absolutely! In fact, the app will be ad free forever, and no trackers will be added. The app is open sourced on Github, so you can check for yourself.</span></div>
         </li> 
+        <li>
+            <div class="collapsible-header">&nbsp;How does the app make money?</div>
+            <div class="collapsible-body"><span class="expandable-thing">Currently, it doesn't make any money at all. You can support development through PayPal on the Support Development tab in the side navigation bar.</span></div>
+        </li> 
+        <li>
+            <div class="collapsible-header">&nbsp;Do you own the audio tunes?</div>
+            <div class="collapsible-body"><span class="expandable-thing">I neither own, nor claim to own any of the sounds used in the app. All credits to FOX Media and NBC.</span></div>
+        </li> 
+        <li>
+            <div class="collapsible-header">&nbsp;Will you make a Jake or Gina or ... soundboard app?</div>
+            <div class="collapsible-body"><span class="expandable-thing">There are no plans at the moment. Designing a new app takes a lot of time, which I currently can't spare. However, if you're willing to make one, I'll be glad to assist.</span></div>
+        </li> 
+        <li>
+            <div class="collapsible-header">&nbsp;Who let the dogs out?</div>
+            <div class="collapsible-body"><span class="expandable-thing">Hitchcock and Scully.</span></div>
+        </li> 
+        <li>
+            <div class="collapsible-header">&nbsp;Can I share the audio tunes on Whatsapp/ other apps?</div>
+            <div class="collapsible-body"><span class="expandable-thing">This is coming in a future update. At the moment, you can write a mail to me with the audio tune you want and I'll be glad to send it to you.</span></div>
+        </li> 
+        <li>
+            <div class="collapsible-header">&nbsp;How do I set them as notification tones/ ringtones?</div>
+            <div class="collapsible-body"><span class="expandable-thing">You currently cannot. Maybe in a future update.</span></div>
+        </li> 
     </ul>
+    <ul id="slide-out" class="sidenav" class="side-items">
+        <li>
+			<img src="Brooklyn-Nine-Nine.jpg">
+		</li>
+        <li>
+			<a href="index.html" class="side-items">
+				<i class="material-icons" style="color:#71adff;">apps</i>&nbsp;&nbsp;Soundboard
+			</a>
+		</li>
+        <li>
+			<a href="support.html" class="side-items">
+				<i class="material-icons" style="color:#e21d70;">favorite</i>&nbsp;&nbsp;Support Development
+			</a>
+		</li>
+        <li><div class="divider"></div></li> 
+        <li>
+			<a href="credits.html" class="side-items">
+				<i class="material-icons" style="color:#ffce00;"> thumb_up</i>&nbsp;&nbsp;Credits
+			</a>
+		</li>
+        <li>
+			<a href="privacy.html" class="side-items">
+				<i class="material-icons" style="color:#34fd89;">lock</i>&nbsp;&nbsp;FAQ
+			</a>
+		</li>
+		<li>
+			 <a class='dropdown-trigger' href='#' data-target='dropdown1' class="side-items" style="color: red;">
+				 <i class="material-icons" style="color: deeppink">palette</i>&nbsp;&nbsp;Choose Theme
+			</a>
+		</li>
+    </ul>
+	<ul id='dropdown1' class='dropdown-content'>
+    	<li class="light-mode"><a href="#!"><i class="material-icons" style="color:black;">brightness_medium</i>&nbsp;Light Mode</a></li>
+    	<li class="dark-mode"><a href="#!"><i class="material-icons" style="color:black;">brightness_2</i>&nbsp;Dark Mode</a></li>
+		<li class="amoled-mode"><a href="#!"><i class="material-icons" style="color:black;">phone_android</i>&nbsp;AMOLED Mode</a></li>
+  	</ul>
 </body>
 </html>

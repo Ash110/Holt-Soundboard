@@ -1,0 +1,116 @@
+<div class="row">
+                <div class="first-div col-4">Hot Damn!</div>
+                <div class="second-div col-4">Get Some</div>
+                <div class="third-div col-4">Bone!</div>
+                <div class="first-div col-4">Boooone!</div>
+                <div class="second-div col-4">Vindication!</div>
+                <div class="third-div col-4">Bingpot!</div>
+                <div class="first-div col-4">Velvet Thunder</div>
+                <div class="second-div col-4">Never been happier</div>
+                <div class="third-div col-4">Marco Polo, Punk</div>
+                <div class="first-div col-4">Yabba Dabba Doo</div>
+                <div class="second-div col-4">Yas Queen</div>
+                <div class="third-div col-4">Boost my bottom</div>
+                <div class = "first-div col-4">Funniest Story Ever</div>
+                <div class="second-div col-4">Next Level</div>
+                <div class="third-div col-4">Logic against me</div>
+                <div class = "first-div col-4">BRB Time</div>
+                <div class="second-div col-4">Wuntch Insult 1</div>
+                <div class="third-div col-4">Wuntch Insult 2</div>
+                <div class = "first-div col-4">Wuntch Insult 3</div>
+                <div class="second-div col-4">Wuntch Insult 4</div>
+                <div class="third-div col-4">Wuntch Insult 5</div>
+                <div class = "first-div col-4">You're not Cheddar</div>
+                <div class="second-div col-4">Holt's robot impression</div>
+                <div class="third-div col-4">Dixsissed</div>
+                <div class = "first-div col-4">Dirtbag!</div>
+                <div class="second-div col-4">I'd like to play</div>
+                <div class="third-div col-4">Oopsie Doodle</div>
+                <div class = "first-div col-4">Superior Officer</div>
+                <div class="second-div col-4">Holt Forced Laughing</div>
+                <div class="third-div col-4">Zero interest in food</div>
+                <div class = "first-div col-4">I'm</div>
+                <div class="second-div col-4">This is</div>
+                <div class="third-div col-4">Raymond Holt</div>
+                <div class = "first-div col-4">Is everything OK?</div>
+                <div class="second-div col-4">Let's get that Punk</div>
+                <div class="third-div col-4">Huh</div>
+                <div class = "first-div col-4">Yes</div>
+                <div class="second-div col-4">Painnn</div>
+                <div class="third-div col-4">Everything is Garbage</div>
+                <div class = "first-div col-4">Never. Love. Anything.</div>
+                <div class="second-div col-4">Peralta, you're a genius</div>
+                <div class="third-div col-4">Cowabunga, Mother</div>
+                <div class = "first-div col-4">You call that, dancing?</div>
+                <div class="second-div col-4">I'm diffusing a situation</div>
+                <div class="third-div col-4">Situation diffused</div>
+                <div class = "first-div col-4">Let's unleash Hell</div>
+                <div class="second-div col-4">Now put on a xsile</div>
+                <div class="third-div col-4">Made? No,I birthed her</div>
+                <div class = "first-div col-4">Derek</div>
+                <div class="second-div col-4">Funky Cold Medina</div>
+                <div class="third-div col-4">Oh Damn!</div>
+                <div class = "first-div col-4">The Full Bullpen!</div>
+                <div class="second-div col-4">Bold Personality</div>
+                <div class="third-div col-4">Cwazy Cupcakes</div>
+                <div class = "first-div col-4">Secret Weapon</div>
+                <div class="second-div col-4">Hello Sexarella</div>
+                <div class="third-div col-4">Holt tries a Marshmallow</div>
+                <div class = "first-div col-4">How dare you Detective Diaz</div>
+                <div class="second-div col-4">I gained 3 pounds</div>
+                <div class="third-div col-4">I was Hula-Hooping</div>
+                <div class = "first-div col-4">I'm a curd-mudgeon</div>
+                <div class="second-div col-4">Stop playing this inane garbage</div>
+                <div class="third-div col-4">This is Balthazar</div>
+                <div class = "first-div col-4">Time to make Daddy proud</div>
+                <div class="second-div col-4">What are you doing?</div>
+        </div>
+    </div>
+    
+    .main-cards{
+    position: absolute;
+    top: 10%;
+    width: 90%;
+    left: 5%;
+}
+.header{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 9%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 175%;
+    font-family: google;
+}
+#menuToggle{
+    position: absolute;
+    left: 15px;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.background{
+    position: absolute;
+    height: 1000%;
+    width:100%;
+}
+.collapsible{
+    position: absolute;
+    width: 90%;
+    background-color: #1a1b1c;
+    left: 5%;
+    top: 5%;
+    border: none;
+}
+.collapsible-header{
+    background-color: #2a2b2c;
+    border: none;
+    color: #ffffff;
+}
+.expandable-thing{
+    color: aliceblue;
+}
