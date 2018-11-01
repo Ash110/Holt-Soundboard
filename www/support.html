@@ -12,23 +12,67 @@
     <link href="stylesheet.css" type="text/css" rel="stylesheet">
     <script src="xdk/init-dev.js"></script>
 </head>
-<body><div class="header" style="display:table;">
-        <p style="display:table-cell; vertical-align:middle;">
+<body>
+    <div class="header" style="display:table;">
+        <div style="display:table-cell; vertical-align:middle;">
             Support Development
-        </p>
-    </div>
-        <div class="fixed-action-btn goback2">
-        <a class="btn-floating btn-large grey sidenav-trigger" data-target='slide-out'>
-            <i class="large material-icons">arrow_back</i>
-        </a>
+            <a href="#" data-target="slide-out" class="sidenav-trigger">
+                <i class="material-icons" id="menuToggle">
+                    menu
+                </i>
+            </a>
+        </div>
     </div>
     <div class="support-body">
-        <h4><a href="https://paypal.me/Ash110">Click to support through PayPal</a></h4>
-        <p>Hey there! I hope you're enjoying the app. The app was built with the main intention to provide a fun "Holt experience" and I believe an important part of that is keeping the app free to download, and totally ad-free. However, a lot of time and effort goes into maintaing the app and improving it, so that Gina Linetti could call it "The app form of the 100 emoji".</p>
-        <p>How do I support development?</p>
-        
-        <p>PayPal is the only supported medium right now. For other ways you'd like to do it, drop me a mail and I'll look into it.</p>
-        <p>This app will always be free and without ads. No payment of any sort will be required at any point. You can support by sharing this app with others around you and spread the cheer!</p>
+        <div class="paypal-btn">Click to support through PayPal</div>
     </div>
+    <div class="support-info">
+        <h4>
+            Thanks for supporting development!
+        </h4>
+        <p>
+            A lot of work goes into the maintenance and development of this app. Currently, PayPal is the only way to support development. If the above link does not work, go to the link -
+        </p>
+        <a href="https://paypal.me/Ash110" style="width: 100%; text-align: center;">https://paypal.me/Ash110</a>
+        <p>in your browser to get it running.</p>
+        <h5>Thanks!</h5>
+    </div>
+    <ul id="slide-out" class="sidenav" class="side-items">
+        <li>
+			<img src="Brooklyn-Nine-Nine.jpg">
+		</li>
+        <li>
+			<a href="index.html" class="side-items">
+				<i class="material-icons" style="color:#71adff;">apps</i>&nbsp;&nbsp;Soundboard
+			</a>
+		</li>
+        <li>
+			<a href="support.html" class="side-items">
+				<i class="material-icons" style="color:#e21d70;">favorite</i>&nbsp;&nbsp;Support Development
+			</a>
+		</li>
+        <li><div class="divider"></div></li> 
+        <li>
+			<a href="credits.html" class="side-items">
+				<i class="material-icons" style="color:#ffce00;"> thumb_up</i>&nbsp;&nbsp;Credits
+			</a>
+		</li>
+        <li>
+			<a href="privacy.html" class="side-items">
+				<i class="material-icons" style="color:#34fd89;">lock</i>&nbsp;&nbsp;FAQ
+			</a>
+		</li>
+		<li>
+			<a class='dropdown-trigger' href='#' data-target='dropdown1' class="side-items" style="color: red;">
+				 <i class="material-icons" style="color: deeppink">palette</i>&nbsp;&nbsp;Choose Theme
+			</a>
+		</li>
+    </ul>
+	<ul id='dropdown1' class='dropdown-content'>
+    	<li class="light-mode"><a href="#!"><i class="material-icons" style="color:black;">brightness_medium</i>&nbsp;Light Mode</a></li>
+    	<li class="dark-mode"><a href="#!"><i class="material-icons" style="color:black;">brightness_2</i>&nbsp;Dark Mode</a></li>
+		<li class="amoled-mode"><a href="#!"><i class="material-icons" style="color:black;">phone_android</i>&nbsp;AMOLED Mode</a></li>
+  	</ul>
+    
 </body>
 </html>

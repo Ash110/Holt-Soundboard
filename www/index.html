@@ -7,130 +7,156 @@
     <script type="text/javascript" src="materialize.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="script.js"></script>
     <link href="stylesheet.css" type="text/css" rel="stylesheet">
     <link href="bootstrap.min.css" type="text/css" rel="stylesheet">
     <script src="xdk/init-dev.js"></script>
 </head>
 <body>
+	<div class="header" style="display: table;">
+		<div style="display: table-cell; vertical-align: middle;">
+			<a href="#" data-target="slide-out" class="sidenav-trigger">
+                <i class="material-icons" id="menuToggle">
+                    menu
+                </i>
+            </a>
+			Holt Soundboard
+		</div>
+	</div>
+	
     <div id="modal1" class="modal">
     <div class="modal-content">
         <h4>Changelog</h4>
         <p>Here's what's new in this update for the best Holt Soundboard app - </p>
         <ol>
-            <li>Added new sounds, including Holt eating a Marshmallow. Waaay too many requests for that one sound.</li>
-            <li>A bug where some sounds wouldn't be played on some phones has been fixed.</li>
-            <li>Terry has been fed his Yogurt</li>
-            <li>The app now looks more colourful! </li>
-            <li>You can now support development to keep the app running</li>
+			<li>NEW DESIGN! Everything has been updated to the new Material Design</li>
+			<li>Search functionality - search for your favourite tunes</li>
+			<li>Switch between a light mode, dark mode and an AMOLED mode</li>
         </ol>
     </div>
     <div class="modal-footer">
       <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
     </div>
   </div>
-    <audio id="buttons-music" src="" controls style="visibility:hidden; z-index:-3;"></audio>
-    <div id="mainHeader" class="header" style="display:table;">
-        <p style="display:table-cell; vertical-align:middle;">
-            <a href="#" data-target="slide-out" class="sidenav-trigger">
-                <i class="material-icons" id="menuToggle">
-                    menu
-                </i>
-            </a>
-            Holt Soundboard
-            <span id="searchBarActivate" class="searchToggle">
-                <i class="material-icons">
-                    search
-                </i>
-            </span>
-        </p>
-        
-    </div>
-    <div class="header" id="searchBarContainer" style="display:none;">
-        <input type="text" id="searchBar" name="search" placeholder="Search">
-        <button type="button" class="searchToggle" id="searchBarDeactivate">x</button>
-    </div>
-    <div class="container-fluid">
+	
+    <div class="container">
         <div class="row">
-        
-        
-                <div class="first-div col-4">Hot Damn!</div>
-                <div class="second-div col-4">Get Some</div>
-                <div class="third-div col-4">Bone!</div>
-                <div class="first-div col-4">Boooone!</div>
-                <div class="second-div col-4">Vindication!</div>
-                <div class="third-div col-4">Bingpot!</div>
-                <div class="first-div col-4">Velvet Thunder</div>
-                <div class="second-div col-4">Never been happier</div>
-                <div class="third-div col-4">Marco Polo, Punk</div>
-                <div class="first-div col-4">Yabba Dabba Doo</div>
-                <div class="second-div col-4">Yas Queen</div>
-                <div class="third-div col-4">Boost my bottom</div>
-                <div class = "first-div col-4">Funniest Story Ever</div>
-                <div class="second-div col-4">Next Level</div>
-                <div class="third-div col-4">Logic against me</div>
-                <div class = "first-div col-4">BRB Time</div>
-                <div class="second-div col-4">Wuntch Insult 1</div>
-                <div class="third-div col-4">Wuntch Insult 2</div>
-                <div class = "first-div col-4">Wuntch Insult 3</div>
-                <div class="second-div col-4">Wuntch Insult 4</div>
-                <div class="third-div col-4">Wuntch Insult 5</div>
-                <div class = "first-div col-4">You're not Cheddar</div>
-                <div class="second-div col-4">Holt's robot impression</div>
-                <div class="third-div col-4">Dixsissed</div>
-                <div class = "first-div col-4">Dirtbag!</div>
-                <div class="second-div col-4">I'd like to play</div>
-                <div class="third-div col-4">Oopsie Doodle</div>
-                <div class = "first-div col-4">Superior Officer</div>
-                <div class="second-div col-4">Holt Forced Laughing</div>
-                <div class="third-div col-4">Zero interest in food</div>
-                <div class = "first-div col-4">I'm</div>
-                <div class="second-div col-4">This is</div>
-                <div class="third-div col-4">Raymond Holt</div>
-                <div class = "first-div col-4">Is everything OK?</div>
-                <div class="second-div col-4">Let's get that Punk</div>
-                <div class="third-div col-4">Huh</div>
-                <div class = "first-div col-4">Yes</div>
-                <div class="second-div col-4">Painnn</div>
-                <div class="third-div col-4">Everything is Garbage</div>
-                <div class = "first-div col-4">Never. Love. Anything.</div>
-                <div class="second-div col-4">Peralta, you're a genius</div>
-                <div class="third-div col-4">Cowabunga, Mother</div>
-                <div class = "first-div col-4">You call that, dancing?</div>
-                <div class="second-div col-4">I'm diffusing a situation</div>
-                <div class="third-div col-4">Situation diffused</div>
-                <div class = "first-div col-4">Let's unleash Hell</div>
-                <div class="second-div col-4">Now put on a xsile</div>
-                <div class="third-div col-4">Made? No,I birthed her</div>
-                <div class = "first-div col-4">Derek</div>
-                <div class="second-div col-4">Funky Cold Medina</div>
-                <div class="third-div col-4">Oh Damn!</div>
-                <div class = "first-div col-4">The Full Bullpen!</div>
-                <div class="second-div col-4">Bold Personality</div>
-                <div class="third-div col-4">Cwazy Cupcakes</div>
-                <div class = "first-div col-4">Secret Weapon</div>
-                <div class="second-div col-4">Hello Sexarella</div>
-                <div class="third-div col-4">Holt tries a Marshmallow</div>
-                <div class = "first-div col-4">How dare you Detective Diaz</div>
-                <div class="second-div col-4">I gained 3 pounds</div>
-                <div class="third-div col-4">I was Hula-Hooping</div>
-                <div class = "first-div col-4">I'm a curd-mudgeon</div>
-                <div class="second-div col-4">Stop playing this inane garbage</div>
-                <div class="third-div col-4">This is Balthazar</div>
-                <div class = "first-div col-4">Time to make Daddy proud</div>
-                <div class="second-div col-4">What are you doing?</div>
-        </div>
+			<div class="first-div col-4 waves-effect waves-dark">Hot Damn!</div>
+            <div class="second-div col-4 waves-effect waves-dark">Get Some</div>
+            <div class="third-div col-4 waves-effect waves-dark">Bone!</div>
+			<div class="first-div col-4 waves-effect waves-dark">Boooone!</div>
+			<div class="second-div col-4 waves-effect waves-dark">Vindication!</div>
+            <div class="third-div col-4 waves-effect waves-dark">Bingpot!</div>
+			<div class="first-div col-4 waves-effect waves-dark">Velvet Thunder</div>
+            <div class="second-div col-4 waves-effect waves-dark">Never been happier</div>
+			<div class="third-div col-4 waves-effect waves-dark">Marco Polo, Punk</div>
+			<div class="first-div col-4 waves-effect waves-dark">Yabba Dabba Doo</div>
+			<div class="second-div col-4 waves-effect waves-dark">Yas Queen</div>
+			<div class="third-div col-4 waves-effect waves-dark">Boost my bottom</div>
+			<div class = "first-div col-4 waves-effect waves-dark">Funniest Story Ever</div>
+			<div class="second-div col-4 waves-effect waves-dark">Next Level</div>
+			<div class="third-div col-4 waves-effect waves-dark">Logic against me</div>
+			<div class = "first-div col-4 waves-effect waves-dark">BRB Time</div>
+			<div class="second-div col-4 waves-effect waves-dark">Wuntch Insult 1</div>
+			<div class="third-div col-4 waves-effect waves-dark">Wuntch Insult 2</div>
+			<div class = "first-div col-4 waves-effect waves-dark">Wuntch Insult 3</div>
+			<div class="second-div col-4 waves-effect waves-dark">Wuntch Insult 4</div>
+			<div class="third-div col-4 waves-effect waves-dark">Wuntch Insult 5</div>
+			<div class = "first-div col-4 waves-effect waves-dark">You're not Cheddar</div>
+			<div class="second-div col-4 waves-effect waves-dark">Holt's robot impression</div>
+			<div class="third-div col-4 waves-effect waves-dark">Dixsissed</div>
+			<div class = "first-div col-4 waves-effect waves-dark">Dirtbag!</div>
+			<div class="second-div col-4 waves-effect waves-dark">I'd like to play</div>
+			<div class="third-div col-4 waves-effect waves-dark">Oopsie Doodle</div>
+			<div class = "first-div col-4 waves-effect waves-dark">Superior Officer</div>
+			<div class="second-div col-4 waves-effect waves-dark">Holt Forced Laughing</div>
+			<div class="third-div col-4 waves-effect waves-dark">Zero interest in food</div>
+			<div class = "first-div col-4 waves-effect waves-dark">I'm</div>
+			<div class="second-div col-4 waves-effect waves-dark">This is</div>
+			<div class="third-div col-4 waves-effect waves-dark">Raymond Holt</div>
+			<div class = "first-div col-4 waves-effect waves-dark">Is everything OK?</div>
+			<div class="second-div col-4 waves-effect waves-dark">Let's get that Punk</div>
+			<div class="third-div col-4 waves-effect waves-dark">Huh</div>
+			<div class = "first-div col-4 waves-effect waves-dark">Yes</div>
+			<div class="second-div col-4 waves-effect waves-dark">Painnn</div>
+			<div class="third-div col-4 waves-effect waves-dark">Everything is Garbage</div>
+			<div class = "first-div col-4 waves-effect waves-dark">Never. Love. Anything.</div>
+			<div class="second-div col-4 waves-effect waves-dark">Peralta, you're a genius</div>
+			<div class="third-div col-4 waves-effect waves-dark">Cowabunga, Mother</div>
+			<div class = "first-div col-4 waves-effect waves-dark">You call that, dancing?</div>
+			<div class="second-div col-4 waves-effect waves-dark">I'm diffusing a situation</div>
+			<div class="third-div col-4 waves-effect waves-dark">Situation diffused</div>
+			<div class = "first-div col-4 waves-effect waves-dark">Let's unleash Hell</div>
+			<div class="second-div col-4 waves-effect waves-dark">Now put on a xsile</div>
+			<div class="third-div col-4 waves-effect waves-dark">Made? No,I birthed her</div>
+			<div class = "first-div col-4 waves-effect waves-dark">Derek</div>
+			<div class="second-div col-4 waves-effect waves-dark">Funky Cold Medina</div>
+			<div class="third-div col-4 waves-effect waves-dark">Oh Damn!</div>
+			<div class = "first-div col-4 waves-effect waves-dark">The Full Bullpen!</div>
+			<div class="second-div col-4 waves-effect waves-dark">Bold Personality</div>
+			<div class="third-div col-4 waves-effect waves-dark">Cwazy Cupcakes</div>
+			<div class = "first-div col-4 waves-effect waves-dark">Secret Weapon</div>
+			<div class="second-div col-4 waves-effect waves-dark">Hello Sexarella</div>
+			<div class="third-div col-4 waves-effect waves-dark">Holt tries a Marshmallow</div>
+			<div class = "first-div col-4 waves-effect waves-dark">How dare you Detective Diaz</div>
+			<div class="second-div col-4 waves-effect waves-dark">I gained 3 pounds</div>
+			<div class="third-div col-4 waves-effect waves-dark">I was Hula-Hooping</div>
+			<div class = "first-div col-4 waves-effect waves-dark">I'm a curd-mudgeon</div>
+			<div class="second-div col-4 waves-effect waves-dark">Stop playing this inane garbage</div>
+			<div class="third-div col-4 waves-effect waves-dark">This is Balthazar</div>
+			<div class = "first-div col-4 waves-effect waves-dark">Time to make Daddy proud</div>
+			<div class="second-div col-4 waves-effect waves-dark">What are you doing?</div>
+		</div>
     </div>
-    <ul id="slide-out" class="sidenav grey darken-3" style="color:white;">
-        <li><img src="https://d1ic4altzx8ueg.cloudfront.net/finder-au/wp-uploads/2017/11/Brooklyn-Nine-Nine.jpg"></li>
-        <li><a href="index2.html" style="color:white;"><i class="material-icons" style="color:white;">chrome_reader_mode</i>&nbsp;&nbsp;List View</a></li>
-        <li><a href="contact.html" style="color:white;"><i class="material-icons" style="color:white;">input</i>&nbsp;&nbsp;Request Quotes</a></li>
-        <li><a href="contact.html" style="color:white;"><i class="material-icons" style="color:white;">contact_support</i>&nbsp;&nbsp;Contact Me</a></li>
-        <li><a href="support.html" style="color:white;"><i class="material-icons" style="color:#e21d70;">favorite</i>&nbsp;&nbsp;Support Development</a></li>
+	
+	<div class="fixed-action-btn scale-transition scale-out">
+  		<a class="btn-floating btn-large red">
+    		<i class="large material-icons search-icon">search</i>
+		</a>
+	</div>
+	
+	<div class="search-bar">
+        <div class="input-field col s6 search-text">
+          <input id="last_name" type="text" class="validate">
+          <label for="last_name">Search for the Sound Track</label>
+        </div>
+	</div>
+	
+	<ul id="slide-out" class="sidenav" class="side-items">
+        <li>
+			<img src="Brooklyn-Nine-Nine.jpg">
+		</li>
+        <li>
+			<a href="contact.html" class="side-items">
+				<i class="material-icons" style="color:#71adff;">input</i>&nbsp;&nbsp;Request Quotes
+			</a>
+		</li>
+        <li>
+			<a href="support.html" class="side-items">
+				<i class="material-icons" style="color:#e21d70;">favorite</i>&nbsp;&nbsp;Support Development
+			</a>
+		</li>
         <li><div class="divider"></div></li> 
-        <li><a href="credits.html" style="color:white;"><i class="material-icons" style="color:white;"> thumb_up</i>&nbsp;&nbsp;Credits</a></li>
-        <li><a href="privacy.html" style="color:white;"><i class="material-icons" style="color:white;">lock</i>&nbsp;&nbsp;Privacy and Ads Policy</a></li>
+        <li>
+			<a href="credits.html" class="side-items">
+				<i class="material-icons" style="color:#ffce00;"> thumb_up</i>&nbsp;&nbsp;Credits
+			</a>
+		</li>
+        <li>
+			<a href="privacy.html" class="side-items">
+				<i class="material-icons" style="color:#34fd89;">lock</i>&nbsp;&nbsp;FAQ
+			</a>
+		</li>
+		<li>
+			 <a class='dropdown-trigger' href='#' data-target='dropdown1' class="side-items" style="color: red;">
+				 <i class="material-icons" style="color: deeppink">palette</i>&nbsp;&nbsp;Choose Theme
+			</a>
+		</li>
     </ul>
+	<ul id='dropdown1' class='dropdown-content'>
+    	<li class="light-mode"><a href="#!"><i class="material-icons" style="color:black;">brightness_medium</i>&nbsp;Light Mode</a></li>
+    	<li class="dark-mode"><a href="#!"><i class="material-icons" style="color:black;">brightness_2</i>&nbsp;Dark Mode</a></li>
+		<li class="amoled-mode"><a href="#!"><i class="material-icons" style="color:black;">phone_android</i>&nbsp;AMOLED Mode</a></li>
+  	</ul>
 </body>
 </html>
