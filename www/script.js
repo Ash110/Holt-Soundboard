@@ -57,7 +57,7 @@ $(document).ready(function() {
     var e = (window.localStorage.key(0), window.localStorage.getItem("Holt-update-01-11-18"));
     if (e=="done");
     else {
-        window.localStorage.setItem("Holt-update-02-10-18", "done");
+        window.localStorage.setItem("Holt-update-01-11-18", "done");
         $('.modal').modal('open');
     }
     $(".col-4").click(function(){
