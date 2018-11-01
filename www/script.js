@@ -29,7 +29,7 @@ $(document).ready(function() {
 		$(".scale-transition").addClass("scale-in");
 	},500);
 	$(".fixed-action-btn").click(function(){
-		if(search==0){
+		if(search===0){
 			$(".search-bar").css("bottom","0%");
 			search = 1;
             $(".search-icon").text("close");
@@ -54,7 +54,7 @@ $(document).ready(function() {
     $(".goback2").click(function(){
         window.location.href ="index.html";
     });
-    var e = (window.localStorage.key(0), window.localStorage.getItem("Holt-update-02-10-18"));
+    var e = (window.localStorage.key(0), window.localStorage.getItem("Holt-update-01-11-18"));
     if (e=="done");
     else {
         window.localStorage.setItem("Holt-update-02-10-18", "done");
@@ -62,12 +62,12 @@ $(document).ready(function() {
     }
     $(".col-4").click(function(){
             var texto = String($(this).text().trim());
-            texto=texto.substring(0,texto.indexOf('?'))+texto.substring(texto.indexOf('?')+1,texto.len)
-            if(currentAudio!=0)
+            texto=texto.substring(0,texto.indexOf('?'))+texto.substring(texto.indexOf('?')+1,texto.len);
+            if(currentAudio!==0)
                 currentAudio.pause();
             currentAudio = document.createElement('audio');
             currentAudio.setAttribute('class','holt-speak');
-            var fileName=String("newSounds/"+texto+".ogg")
+            var fileName=String("newSounds/"+texto+".ogg");
             currentAudio.setAttribute('src', fileName);
             currentAudio.setAttribute('autoplay', 'autoplay');
             currentAudio.play();
