@@ -1,7 +1,7 @@
 {
   "name": "Holt Soundboard",
-  "short_name": "Eh",
-  "display": "standalone",
+  "short_name": "Holt Soundboard",
+  "display": "browser",
   "start_url": "/index.html",
   "theme_color": "#d61a1a",
   "background_color": "#e8da2f",
