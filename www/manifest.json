@@ -2,7 +2,7 @@
   "name": "Holt Soundboard",
   "short_name": "Holt Soundboard",
   "display": "browser",
-  "start_url": "/Holt-Soundboard/www/index.html",
+  "start_url": "https://www.ash110.github.io/Holt-Soundboard/www/index.html",
   "theme_color": "#d61a1a",
   "background_color": "#e8da2f",
   "icons": [
