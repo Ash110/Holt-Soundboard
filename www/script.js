@@ -4,7 +4,7 @@ function makeEverythingAppear(boxes)
         boxes[i].style.display="block";
 }
 $(document).ready(function() {
-    navigator.serviceWorker && navigator.serviceWorker.register('./sw.js').then(function(registration) {
+    navigator.serviceWorker && navigator.serviceWorker.register('sw.js').then(function(registration) {
         console.log('Excellent, registered with scope: ', registration.scope);
     });
 	var search=0;
