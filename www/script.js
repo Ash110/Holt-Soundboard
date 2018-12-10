@@ -7,6 +7,14 @@ $(document).ready(function() {
     navigator.serviceWorker && navigator.serviceWorker.register('sw.js').then(function(registration) {
         console.log('Excellent, registered with scope: ', registration.scope);
     });
+    var v = (window.localStorage.key(0), window.localStorage.getItem("Holt-fav"));
+    if (v!==""){
+        fav_sounds=new Array(e);
+    }
+    else {
+        var fav_sounds =[];
+        window.localStorage.setItem("Holt-fav", fav_sounds);
+    }
 	var search=0;
 	var mywindow = $(window);
     var mypos = mywindow.scrollTop();
@@ -140,5 +148,14 @@ $(document).ready(function() {
     $(".amoled-mode").click(function(){
         window.localStorage.setItem("Holt-theme", "amoled");
         location.reload();
+    });
+    $('.col-4').on('press', function(e) {
+        $(this).addClass("tada");
+        var texto = String($(this).text());
+        if(fav_sounds.includes(texto) === false){
+            fav_sounds.push(texto);    
+            window.localStorage.setItem("Holt-fav", fav_sounds);
+        }
+        alert(fav_sounds);
     });
 });
