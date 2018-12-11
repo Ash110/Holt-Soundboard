@@ -149,7 +149,7 @@ $(document).ready(function() {
         window.localStorage.setItem("Holt-theme", "amoled");
         location.reload();
     });
-    $('.col-4').on('press', function(e) {
+    /*$('.col-4').on('press', function(e) {
         $(this).addClass("tada");
         var texto = String($(this).text());
         if(fav_sounds.includes(texto) === false){
@@ -157,5 +157,5 @@ $(document).ready(function() {
             window.localStorage.setItem("Holt-fav", fav_sounds);
         }
         alert(fav_sounds);
-    });
+    });*/
 });
