@@ -7,6 +7,15 @@ body{
     background-color: #ffffff;
     
 }
+footer{
+    position: fixed;
+    bottom: 0%;
+    text-align: center;
+    z-index: 1000;
+    width: 100%;
+    background: white;
+    box-shadow: 2px 2px black;
+}     
 .col-4{
     text-align: center;
     margin: 1.4%;
@@ -26,6 +35,9 @@ body{
 }
 .third-div{
 	background: #ffba7f;
+}
+.fav-div{
+	background: #F4BA05;
 }
 .header{
     position: absolute;

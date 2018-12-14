@@ -1,16 +1,42 @@
-function makeEverythingAppear(boxes)
-{  
-    for(var i=0;i<boxes.length;i++)
-        boxes[i].style.display="block";
-}
+
 $(document).ready(function() {
-    $(".col-4").addClass("jackInTheBox");
+    var fav_sounds=new Array();
+    var v = (window.localStorage.key(0), window.localStorage.getItem("Holt-fav"));
+    console.log(v);
+    setTimeout(function(){
+        if (v===""){
+            console.log("New Array");
+            console.log(fav_sounds);
+        }
+        else {
+            var hmm = window.localStorage.getItem("Holt-fav").split(",");
+            fav_sounds = [];
+            $.each(hmm, function(i, el){
+                if($.inArray(el, fav_sounds) === -1) fav_sounds.push(el);
+            });
+            console.log(fav_sounds);
+            window.localStorage.setItem("Holt-fav",fav_sounds);
+        }
+    },1000);
+    var z;
+    setTimeout(function(){
+        for(z=0;z<=(fav_sounds.length)-1;z++){
+            $(".row").append('<div class="fav-div col-4 animated waves-effect waves-dark">'+fav_sounds[z]+'</div>');
+        }
+        $(".col-4").addClass("jackInTheBox");
+    },1500);
+    setTimeout(function(){
+        function makeEverythingAppear(boxes){  
+        for(var i=0;i<boxes.length;i++){
+            boxes[i].style.display="block";
+        }
+    }
+    
 	var search=0;
 	var mywindow = $(window);
     var mypos = mywindow.scrollTop();
     var boxes=document.getElementsByClassName("col-4");
     var titles=[];
-    var fav_sounds=new Array();
     var currentAudio=0;
 	mywindow.scroll(function() {
     	if(mywindow.scrollTop() > mypos)
@@ -56,12 +82,7 @@ $(document).ready(function() {
     $(".goback2").click(function(){
         window.location.href ="index.html";
     });
-    var e = (window.localStorage.key(0), window.localStorage.getItem("Holt-update-07-11-18"));
-    if (e=="done");
-    else {
-        window.localStorage.setItem("Holt-update-07-11-18", "done");
-        $('.modal').modal('open');
-    }
+    
     $(".col-4").click(function(){
         var texto = String($(this).text().trim());
         texto=texto.substring(0,texto.indexOf('?'))+texto.substring(texto.indexOf('?')+1,texto.len);
@@ -140,34 +161,24 @@ $(document).ready(function() {
         window.localStorage.setItem("Holt-theme", "amoled");
         location.reload();
     });
-    var v = (window.localStorage.key(0), window.localStorage.getItem("Holt-fav"));
-    console.log(v);
-    setTimeout(function(){
-        if (v===""){
-            console.log("New Array");
-            console.log(fav_sounds);
-        }
-        else {
-            var hmm = window.localStorage.getItem("Holt-fav").split(",");
-            fav_sounds = [];
-            $.each(hmm, function(i, el){
-                if($.inArray(el, fav_sounds) === -1) fav_sounds.push(el);
-            });
-            console.log(fav_sounds);
-            window.localStorage.setItem("Holt-fav",fav_sounds)
-        }
-    },1000);
+
     $('.col-4').on('press', function(e) {
         $(this).removeClass("jackInTheBox");
-        $(this).addClass("tada");
+        $(this).addClass("hinge");
         var texto = String($(this).text());
-        if(fav_sounds.includes(texto) === false){
-            fav_sounds.push(texto);
-            window.localStorage.setItem("Holt-fav", fav_sounds);
+        console.log(fav_sounds);
+        var index = fav_sounds.indexOf(texto);
+        if (index > -1) {
+            fav_sounds.splice(index, 1);
         }
+        window.localStorage.setItem("Holt-fav", fav_sounds);
         console.log(window.localStorage.getItem("Holt-fav"));
         setTimeout(function(){
-            $(this).removeClass("tada");
-        },1000);
+            $(this).removeClass("hinge");
+            
+        },2000);
     });
+    },2000);
+    
+    
 });

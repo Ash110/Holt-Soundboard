@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Holt Soundboard</title>
+    <link rel="icon" href="favicon.ico" type="image/ico">
+    <link rel="manifest" href="manifest.json" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <script src="jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="materialize.min.css">
+    <link type="text/css" rel="stylesheet" href="animate.css">
+    <script src="jquery.finger.js"></script>
+    <script src="favs.js"></script>
+    <link href="stylesheet.css" type="text/css" rel="stylesheet">
+    <link href="bootstrap.min.css" type="text/css" rel="stylesheet">
+    <script src="xdk/init-dev.js"></script>
+</head>
+<body>
+    <div class="header" style="display:table;">
+        <div style="display:table-cell; vertical-align:middle;">
+            Favourites
+            <a href="#" data-target="slide-out" class="sidenav-trigger">
+                <i class="material-icons" id="menuToggle">
+                    menu
+                </i>
+            </a>
+        </div>
+    </div>   
+    <ul id="slide-out" class="sidenav" class="side-items">
+        <li>
+			<img src="Brooklyn-Nine-Nine.jpg">
+		</li>
+        <li>
+			<a href="index.html" class="side-items">
+				<i class="material-icons" style="color:#71adff;">apps</i>&nbsp;&nbsp;Soundboard
+			</a>
+		</li>
+        
+        <li>
+			<a href="support.html" class="side-items">
+				<i class="material-icons" style="color:#e21d70;">favorite</i>&nbsp;&nbsp;Support Development
+			</a>
+		</li>
+        <li><div class="divider"></div></li> 
+        <li>
+			<a href="credits.html" class="side-items">
+				<i class="material-icons" style="color:#ffce00;"> thumb_up</i>&nbsp;&nbsp;Credits
+			</a>
+		</li>
+        <li>
+			<a href="privacy.html" class="side-items">
+				<i class="material-icons" style="color:#34fd89;">lock</i>&nbsp;&nbsp;FAQ
+			</a>
+		</li>
+		<li>
+			 <a class='dropdown-trigger' href='#' data-target='dropdown1' class="side-items" style="color: red;">
+				 <i class="material-icons" style="color: deeppink">palette</i>&nbsp;&nbsp;Choose Theme
+			</a>
+		</li>
+    </ul>
+	<ul id='dropdown1' class='dropdown-content'>
+    	<li class="light-mode"><a href="#!"><i class="material-icons" style="color:black;">brightness_medium</i>&nbsp;Light Mode</a></li>
+    	<li class="dark-mode"><a href="#!"><i class="material-icons" style="color:black;">brightness_2</i>&nbsp;Dark Mode</a></li>
+		<li class="amoled-mode"><a href="#!"><i class="material-icons" style="color:black;">phone_android</i>&nbsp;AMOLED Mode</a></li>
+  	</ul>
+    <div class="container animated">
+        <div class="row">
+			
+		</div>
+    </div>
+    <div class="fixed-action-btn scale-transition scale-out">
+  		<a class="btn-floating btn-large red">
+    		<i class="large material-icons search-icon">search</i>
+		</a>
+	</div>
+	
+	<div class="search-bar">
+        <div class="input-field col s6 search-text">
+          <input id="last_name" type="text" class="validate">
+          <label for="last_name">Search for the Sound Track</label>
+        </div>
+	</div>
+    <footer class="holt-footer">
+        <p>Long press any of the buttons to remove from favourites</p>      
+    </footer>
+</body>
+</html>
