@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    var canvas2ImagePlugin = window.plugins.canvas2ImagePlugin;
+    /*var canvas2ImagePlugin = window.plugins.canvas2ImagePlugin;
     var countDownDate = new Date("Jan 10, 2019 21:30:00").getTime();
     var now = new Date().getTime();
     var distance = countDownDate - now;
@@ -40,6 +40,6 @@ $(document).ready(function(){
         }, 
         document.getElementById("myCanvas")
     );
-}
+}*/
 
 });
