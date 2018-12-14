@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    var canvas2ImagePlugin = window.plugins.canvas2ImagePlugin;
     var countDownDate = new Date("Jan 10, 2019 21:30:00").getTime();
     var now = new Date().getTime();
     var distance = countDownDate - now;
@@ -29,16 +30,16 @@ $(document).ready(function(){
         ctx.textAlign = "center";
         ctx.fillText("Visit soundboards.xyz to use the Holt Soundboard", canvas.width/2, 280); 
     };
-    setTimeout(function(){
-        window.canvas2ImagePlugin.saveImageDataToLibrary(
+    function mySavingFunction() {
+    canvas2ImagePlugin.saveImageDataToLibrary(
         function(msg){
             alert(msg);
-        },
+        }, 
         function(err){
             alert(err);
-        },
-        document.getElementById('myCanvas')
+        }, 
+        document.getElementById("myCanvas")
     );
-    },2000);
+}
 
 });
