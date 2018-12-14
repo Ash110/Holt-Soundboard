@@ -127,3 +127,10 @@ img{
     color:black; 
     font-family:google;
 }
+.time-head{
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    left: 5%:
+}

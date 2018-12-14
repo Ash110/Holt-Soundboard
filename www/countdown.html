@@ -4,10 +4,12 @@
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <script src="jquery-2.2.4.min.js"></script>
+    <script src="konva.js"></script>
     <script type="text/javascript" src="materialize.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="countdown.js"></script>
     <script src="script.js"></script>
     <link href="stylesheet.css" type="text/css" rel="stylesheet">
     <script src="xdk/init-dev.js"></script>
@@ -23,7 +25,6 @@
             </a>
         </div>
     </div>
-    
     <ul id="slide-out" class="sidenav" class="side-items">
         <li>
 			<img src="Brooklyn-Nine-Nine.jpg">
@@ -60,5 +61,8 @@
     	<li class="dark-mode"><a href="#!"><i class="material-icons" style="color:black;">brightness_2</i>&nbsp;Dark Mode</a></li>
 		<li class="amoled-mode"><a href="#!"><i class="material-icons" style="color:black;">phone_android</i>&nbsp;AMOLED Mode</a></li>
   	</ul>
+    <!--<h4 class="time-head">Season 6 starts in :</h4>-->
+    <canvas id="myCanvas" style="position:absolute;top:20%;"></canvas>
+    <div id="container" ></div>
 </body>
 </html>
