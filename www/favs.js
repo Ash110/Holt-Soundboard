@@ -20,6 +20,7 @@ $(document).ready(function() {
     },1000);
     var z;
     setTimeout(function(){
+        $(".loader").hide();
         for(z=0;z<=(fav_sounds.length)-1;z++){
             $(".row").append('<div class="fav-div col-4 animated waves-effect waves-dark">'+fav_sounds[z]+'</div>');
         }
@@ -179,6 +180,5 @@ $(document).ready(function() {
         },2000);
     });
     },2000);
-    
     
 });

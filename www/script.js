@@ -86,8 +86,7 @@ $(document).ready(function() {
         }
     });
     $(".paypal-btn").click(function(){
-        var win = window.open("https://paypal.me/Ash110", '_blank');
-        win.focus();
+        window.open('https://paypal.me/Ash110', '_self ', 'location=yes');
     });
     
     /*                      THEMES                        */
@@ -103,6 +102,7 @@ $(document).ready(function() {
         $(".collapsible-header").css("background-color","#3e3e3e");
         $(".collapsible-header").css("color","white");
         $(".collapsible-header").css("border-bottom","none");
+        $(".time-head").css("color","white");
     }
     else if (theme=="light"){
         $("body").css("background","#ffffff");
@@ -115,6 +115,7 @@ $(document).ready(function() {
         $(".collapsible-header").css("background-color","#ffffff");
         $(".collapsible-header").css("color","black");
         $(".collapsible-header").css("border-bottom","none");
+        $(".time-head").css("color","black");
     }
     else if (theme=="amoled"){
         $("body").css("background","#000000");
@@ -127,6 +128,7 @@ $(document).ready(function() {
         $(".collapsible-header").css("background-color","#000000");
         $(".collapsible-header").css("color","#ffffff");
         $(".collapsible-header").css("border-bottom","none");
+        $(".time-head").css("color","white");  
     }
     $(".dark-mode").click(function(){
         window.localStorage.setItem("Holt-theme", "dark");
