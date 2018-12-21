@@ -86,7 +86,7 @@ $(document).ready(function() {
         }
     });
     $(".paypal-btn").click(function(){
-        var ref = cordova.InAppBrowser.open('https://paypal.me/Ash110', '_system', 'location=yes');
+        window.open('https://paypal.me/Ash110', '_system', 'location=no');
     });
     
     /*                      THEMES                        */

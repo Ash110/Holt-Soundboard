@@ -49,4 +49,7 @@ $(document).ready(function(){
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     $(".countdown-days").text(days)
+    $(".count-share").click(function(){
+        alert("Sharing the excitement is coming very, very soon!");
+    });
 });

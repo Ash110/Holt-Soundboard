@@ -149,6 +149,13 @@ img{
     left: 10%;
     padding: 10%;
     margin: 10%;
-    background-image: linear-gradient(to right, #53bcf4 , #00ff76);
+    background-image: linear-gradient(to right, #53bcf4 , #00f5ff);
     border-radius: 10px;
+}
+.count-share{
+    position: absolute;
+    bottom: 10%;
+    width: 20%;
+    text-align: center;
+    left: 40%;
 }
