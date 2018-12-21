@@ -4,7 +4,6 @@ function makeEverythingAppear(boxes)
         boxes[i].style.display="block";
 }
 $(document).ready(function() {
-    window.open = cordova.InAppBrowser.open;
     $(".col-4").addClass("jackInTheBox");
 	var search=0;
 	var mywindow = $(window);
@@ -157,7 +156,7 @@ $(document).ready(function() {
                 if($.inArray(el, fav_sounds) === -1) fav_sounds.push(el);
             });
             console.log(fav_sounds);
-            window.localStorage.setItem("Holt-fav",fav_sounds)
+            window.localStorage.setItem("Holt-fav",fav_sounds);
         }
     },1000);
     $('.col-4').on('press', function(e) {
