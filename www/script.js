@@ -4,6 +4,7 @@ function makeEverythingAppear(boxes)
         boxes[i].style.display="block";
 }
 $(document).ready(function() {
+    window.open = cordova.InAppBrowser.open;
     $(".col-4").addClass("jackInTheBox");
 	var search=0;
 	var mywindow = $(window);
@@ -86,7 +87,7 @@ $(document).ready(function() {
         }
     });
     $(".paypal-btn").click(function(){
-        window.open('https://paypal.me/Ash110', '_system', 'location=yes');
+        var ref = cordova.InAppBrowser.open('https://paypal.me/Ash110', '_system', 'location=yes');
     });
     
     /*                      THEMES                        */
