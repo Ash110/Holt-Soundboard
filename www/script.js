@@ -73,6 +73,23 @@ $(document).ready(function() {
         currentAudio.setAttribute('src', fileName);
         currentAudio.setAttribute('autoplay', 'autoplay');
         currentAudio.play();        
+        var options = {
+            message: 'share this', // not supported on some apps (Facebook, Instagram)
+            subject: 'the subject', // fi. for email
+            files: [fileName], // an array of filenames either locally or remotely
+              chooserTitle: 'Pick an app' // Android only, you can override the default share sheet title,
+        };
+
+        var onSuccess = function(result) {
+          alert("Share completed? " + result.completed); // On Android apps mostly return false even while it's true
+          alert("Shared to app: " + result.app); // On Android result.app since plugin version 5.4.0 this is no longer empty. On iOS it's empty when sharing is cancelled (result.completed=false)
+        };
+
+        var onError = function(msg) {
+          alert("Sharing failed with message: " + msg);
+        };
+
+        window.plugins.socialsharing.shareWithOptions(options, onSuccess, onError);
     });
    
     $("#last_name").on('input', function(){
