@@ -24,7 +24,7 @@
 <plugin name="cordova-connectivity-monitor" spec="1.2.2"/>
 <plugin name="cordova-libgoogleadmobads" spec="https://github.com/appfeel/google-iosadmobads#master"/> <!-- If available via Cordova registry; consider changing to an NPM reference. -->
 <plugin name="cordova-play-services-version-adapter" spec="1.0.1"/>
-<plugin name="cordova-plugin-x-socialsharing" spec="5.4.0">
+<plugin name="cordova-plugin-x-socialsharing" spec="5.4.3">
 <variable name="ANDROID_SUPPORT_V4_VERSION" value="27.1.1"/>
 </plugin>
 <plugin name="es6-promise-plugin" spec="4.2.2"/>

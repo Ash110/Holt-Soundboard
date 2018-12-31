@@ -25,6 +25,7 @@
 <plugin name="cordova-libgoogleadmobads" spec="https://github.com/appfeel/google-iosadmobads#master"/> <!-- If available via Cordova registry; consider changing to an NPM reference. -->
 <plugin name="cordova-play-services-version-adapter" spec="1.0.1"/>
 <plugin name="cordova-plugin-whitelist" spec="1.2.2"/>
+<plugin name = "cordova-plugin-x-socialsharing" source="npm" version="5.4.0" />
 <platform  name="ios">
     <!-- below requires the splash screen plugin -->
     <!-- docs: https://github.com/apache/cordova-plugin-splashscreen -->
