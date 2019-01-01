@@ -57,10 +57,10 @@
     <preference name="AndroidLaunchMode" value="singleTop"/>
     <preference name="Orientation" value="portrait"/>
 </platform>
-<icon platform="android" src="package-assets/36.png" density="ldpi" width="36" height="36"/>
-<icon platform="android" src="package-assets/48.png" density="mdpi" width="48" height="48"/>
-<icon platform="android" src="package-assets/72.png" density="hdpi" width="72" height="72"/>
-<icon platform="android" src="package-assets/96.png" density="xhdpi" width="96" height="96"/>
+<icon platform="android" src="package-assets/Icon-36.png" density="ldpi" width="36" height="36"/>
+<icon platform="android" src="package-assets/Icon-48.png" density="mdpi" width="48" height="48"/>
+<icon platform="android" src="package-assets/Icon-72.png" density="hdpi" width="72" height="72"/>
+<icon platform="android" src="package-assets/Icon-96.png" density="xhdpi" width="96" height="96"/>
 <config-file platform="android" parent="/manifest/application" mode="merge"> 
     <activity android:launchMode="singleTop" />
 </config-file>
