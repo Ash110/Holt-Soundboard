@@ -77,7 +77,7 @@ $(document).ready(function() {
     });
     $(".holt-chat").click(function(){
         var url = "https://holt-chat.firebaseapp.com";
-        var ref = window.open(url, "_self");
+        var ref = window.open(url, "_blank");
     });
     $("#last_name").on('input', function(){
         var searchBar=document.getElementById("last_name");
