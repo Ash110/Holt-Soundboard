@@ -74,7 +74,7 @@ $(document).ready(function() {
         currentAudio.setAttribute('src', fileName);
         currentAudio.setAttribute('autoplay', 'autoplay');
         currentAudio.play();
-        alert(encodeURIComponent(fileName).value));
+        alert(encodeURIComponent(fileName).value);
         var fff=encodeURIComponent(fileName).value;
         var options = {
             message: 'Check out the Holt Soundboard on the Play Store for more sounds!', // not supported on some apps (Facebook, Instagram)
