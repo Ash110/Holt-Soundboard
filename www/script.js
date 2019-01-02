@@ -74,10 +74,12 @@ $(document).ready(function() {
         currentAudio.setAttribute('src', fileName);
         currentAudio.setAttribute('autoplay', 'autoplay');
         currentAudio.play();
+        alert(encodeURIComponent(fileName).value));
+        var fff=encodeURIComponent(fileName).value;
         var options = {
             message: 'Check out the Holt Soundboard on the Play Store for more sounds!', // not supported on some apps (Facebook, Instagram)
             subject: 'Holt Quotes', // fi. for email
-            files: ["/"+fileName], // an array of filenames either locally or remotely
+            files: [fff], // an array of filenames either locally or remotely
             chooserTitle: 'Share the sounds on your favourite app!' // Android only, you can override the default share sheet title,
         };
 
