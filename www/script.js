@@ -4,40 +4,6 @@ function makeEverythingAppear(boxes)
         boxes[i].style.display="block";
 }
 $(document).ready(function() {
-    var options = {
-  message: 'share this', // not supported on some apps (Facebook, Instagram)
-  subject: 'the subject', // fi. for email
-  files: ['', ''], // an array of filenames either locally or remotely
-  url: 'https://www.website.com/foo/#bar?a=b',
-  chooserTitle: 'Pick an app' // Android only, you can override the default share sheet title,
-};
-
-var onSuccess = function(result) {
-  console.log("Share completed? " + result.completed); // On Android apps mostly return false even while it's true
-  console.log("Shared to app: " + result.app); // On Android result.app since plugin version 5.4.0 this is no longer empty. On iOS it's empty when sharing is cancelled (result.completed=false)
-};
-
-var onError = function(msg) {
-  console.log("Sharing failed with message: " + msg);
-};
-var options = {
-  message: 'share this', // not supported on some apps (Facebook, Instagram)
-  subject: 'the subject', // fi. for email
-  files: ['', ''], // an array of filenames either locally or remotely
-  url: 'https://www.website.com/foo/#bar?a=b',
-  chooserTitle: 'Pick an app' // Android only, you can override the default share sheet title,
-};
-
-var onSuccess = function(result) {
-  console.log("Share completed? " + result.completed); // On Android apps mostly return false even while it's true
-  console.log("Shared to app: " + result.app); // On Android result.app since plugin version 5.4.0 this is no longer empty. On iOS it's empty when sharing is cancelled (result.completed=false)
-};
-
-var onError = function(msg) {
-  console.log("Sharing failed with message: " + msg);
-};
-
-window.plugins.socialsharing.shareWithOptions(options, onSuccess, onError);
     $(".col-4").addClass("jackInTheBox");
 	var search=0;
 	var mywindow = $(window);
@@ -109,23 +75,20 @@ window.plugins.socialsharing.shareWithOptions(options, onSuccess, onError);
         currentAudio.setAttribute('autoplay', 'autoplay');
         currentAudio.play();
         var options = {
-  message: 'share this', // not supported on some apps (Facebook, Instagram)
-  subject: 'the subject', // fi. for email
-  files: [fileName], // an array of filenames either locally or remotely
-  url: 'https://www.website.com/foo/#bar?a=b',
-  chooserTitle: 'Pick an app' // Android only, you can override the default share sheet title,
-};
+            message: 'Check out the Holt Soundboard on the Play Store for more sounds!', // not supported on some apps (Facebook, Instagram)
+            subject: 'Holt Quotes', // fi. for email
+            files: ["/"+fileName], // an array of filenames either locally or remotely
+            chooserTitle: 'Share the sounds on your favourite app!' // Android only, you can override the default share sheet title,
+        };
 
-var onSuccess = function(result) {
-  alert("Share completed? " + result.completed); // On Android apps mostly return false even while it's true
-  alert("Shared to app: " + result.app); // On Android result.app since plugin version 5.4.0 this is no longer empty. On iOS it's empty when sharing is cancelled (result.completed=false)
-};
-
-var onError = function(msg) {
-  alert("Sharing failed with message: " + msg);
-};
-
-window.plugins.socialsharing.shareWithOptions(options, onSuccess, onError);
+        var onSuccess = function(result) {
+            alert("Share completed? " + result.completed); // On Android apps mostly return false even while it's true
+            alert("Shared to app: " + result.app); // On Android result.app since plugin version 5.4.0 this is no longer empty. On iOS it's empty when sharing is cancelled (result.completed=false)
+        };
+        var onError = function(msg) {
+          alert("Sharing failed with message: " + msg);
+        };
+        window.plugins.socialsharing.shareWithOptions(options, onSuccess, onError);
     });
     $(".holt-chat").click(function(){
         var url = "https://holt-chat.firebaseapp.com";
